@@ -1,0 +1,14 @@
+D:\MicrosoftProjects\EjercicioFinal2\bin\Debug\EjercicioFinal2.exe.config
+D:\MicrosoftProjects\EjercicioFinal2\bin\Debug\EjercicioFinal2.exe
+D:\MicrosoftProjects\EjercicioFinal2\bin\Debug\EjercicioFinal2.pdb
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2.csprojAssemblyReference.cache
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\MainWindow.g.cs
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\App.g.cs
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2_MarkupCompile.cache
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2_MarkupCompile.lref
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\MainWindow.baml
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2.g.resources
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2.Properties.Resources.resources
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2.csproj.GenerateResource.cache
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2.exe
+D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2.pdb

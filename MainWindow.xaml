@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EjercicioFinal2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel Margin="40 20 40 0">
+    <StackPanel Margin="40 20 40 0" >
         <Label FontWeight="Bold">Listado de Pedidos</Label>
         <DataGrid Name="DgPedidos" AutoGenerateColumns="True">
         </DataGrid>

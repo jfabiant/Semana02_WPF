@@ -56,7 +56,18 @@ namespace EjercicioFinal2
                         DataRow[] rows = dt.Rows.Cast<DataRow>().ToArray();
                         Console.WriteLine(rows);
 
-                        pedidos.Add(new Pedido() { IdPedido = "22" });
+                        for (int i = 0; i < rows.Length; i++)
+                        {
+                            pedidos.Add(new Pedido() { IdPedido = rows[i]["idPedido"].ToString() });
+                            pedidos.Add(new Pedido() { IdCliente = rows[i]["idCliente"].ToString() });
+                            pedidos.Add(new Pedido() { IdEmpleado = rows[i]["idEmpleado"].ToString() });
+                            pedidos.Add(new Pedido() { FechaPedido = rows[i]["fechaPedido"].ToString() });
+                            pedidos.Add(new Pedido() { FechaEntrega = rows[i]["fechaEntrega"].ToString() });
+                            pedidos.Add(new Pedido() { FechaEnvio = rows[i]["fechaEnvio"].ToString() });
+                            pedidos.Add(new Pedido() { FormaEnvio = rows[i]["formaEnvio"].ToString() });
+                            pedidos.Add(new Pedido() { Cargo = rows[i]["cargo"].ToString() });
+
+                        }
 
                         DgPedidos.ItemsSource = pedidos;
 

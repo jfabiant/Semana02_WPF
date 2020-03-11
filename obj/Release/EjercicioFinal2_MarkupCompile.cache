@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\JOHN\source\repos\Semana02_WPF\obj\Debug\
+C:\Users\JOHN\source\repos\Semana02_WPF\obj\Release\
 EjercicioFinal2
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\JOHN\source\repos\Semana02_WPF\App.xaml
 11151548125
 
@@ -16,5 +16,5 @@ C:\Users\JOHN\source\repos\Semana02_WPF\App.xaml
 141066371409
 MainWindow.xaml;
 
-False
+True
 

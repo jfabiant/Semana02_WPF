@@ -12,3 +12,17 @@ D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2.Properties.Resour
 D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2.csproj.GenerateResource.cache
 D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2.exe
 D:\MicrosoftProjects\EjercicioFinal2\obj\Debug\EjercicioFinal2.pdb
+C:\Users\JOHN\Source\Repos\Semana02_WPF\bin\Debug\EjercicioFinal2.exe.config
+C:\Users\JOHN\Source\Repos\Semana02_WPF\bin\Debug\EjercicioFinal2.exe
+C:\Users\JOHN\Source\Repos\Semana02_WPF\bin\Debug\EjercicioFinal2.pdb
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\EjercicioFinal2.csprojAssemblyReference.cache
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\App.g.cs
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\EjercicioFinal2_MarkupCompile.cache
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\EjercicioFinal2_MarkupCompile.lref
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\MainWindow.baml
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\EjercicioFinal2.g.resources
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\EjercicioFinal2.Properties.Resources.resources
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\EjercicioFinal2.csproj.GenerateResource.cache
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\EjercicioFinal2.exe
+C:\Users\JOHN\Source\Repos\Semana02_WPF\obj\Debug\EjercicioFinal2.pdb

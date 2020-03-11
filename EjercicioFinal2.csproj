@@ -75,6 +75,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>neptunoDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Pedido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

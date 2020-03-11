@@ -35,6 +35,8 @@ namespace EjercicioFinal2
         private void ListaProductos()
         {
 
+            List<Pedido> pedidos = new List<Pedido>();
+
             using (SqlCommand cmd = new SqlCommand("Usp_ListaPedidos", cn))
             {
                 using (SqlDataAdapter da = new SqlDataAdapter())
@@ -50,52 +52,20 @@ namespace EjercicioFinal2
 
                         //DgPedidos.ItemsSource = df.Tables["ListaPedidos"];
 
-                        Console.WriteLine("Hello Im the console");
+                        Console.WriteLine("######## DATA ROWS ########");
                         DataRow[] rows = dt.Rows.Cast<DataRow>().ToArray();
+                        Console.WriteLine(rows);
 
-                        List<string[]> results =
-                        dt.Select()
-                            .Select(dr =>
-                                rows
-                                    .Select(x => x.ToString())
-                                    .ToArray())
-                            .ToList();
+                        pedidos.Add(new Pedido() { IdPedido = "22" });
 
-
-                        Console.WriteLine(results);
+                        DgPedidos.ItemsSource = pedidos;
 
                     }
                 }
             }
 
 
-            
-            //users.Add(new Pedido() { Id = 1, Name = "John Doe", Birthday = new DateTime(1971, 7, 23) });
-            //users.Add(new Pedido() { Id = 2, Name = "Jane Doe", Birthday = new DateTime(1974, 1, 17) });
-            //users.Add(new Pedido() { Id = 3, Name = "Sammy Doe", Birthday = new DateTime(1991, 9, 2) });
-
-            //dgUsers.ItemsSource = users;
-
 
         }
-
-        public class Pedido
-        {
-            public string IdPedido { get; set; }
-            public string IdCliente { get; set; }
-            public string IdEmpleado { get; set; }
-            public string FechaPedido { get; set; }
-            public string FechaEntrega { get; set; }
-            public string FechaEnvio { get; set; }
-            public string FormaEnvio { get; set; }
-            public string Cargo { get; set; }
-            public string Destinatario { get; set; }
-            public string DireccionDestinatario { get; set; }
-            public string CiudadDestinatario { get; set; }
-            public string RegionDestinatario { get; set; }
-            public string CodPostalDestinatario { get; set; }
-            public string PaisDestinatario { get; set; }
-        }   
-
     }
 }

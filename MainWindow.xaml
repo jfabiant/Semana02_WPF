@@ -8,14 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <StackPanel Margin="40 20 40 0">
         <Label FontWeight="Bold">Listado de Pedidos</Label>
-        <DataGrid Name="DgPedidos" AutoGenerateColumns="False">
-			<DataGrid.Columns>
-
-                <DataGridTextColumn Header="Name" Binding="{Binding IdCliente}" />
-                <DataGridTextColumn Header="Name" Binding="{Binding IdCliente}" />
-
-
-            </DataGrid.Columns>
-		</DataGrid>
+        <DataGrid Name="DgPedidos" AutoGenerateColumns="True">
+        </DataGrid>
     </StackPanel>
 </Window>

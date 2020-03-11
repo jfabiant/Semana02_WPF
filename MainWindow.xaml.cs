@@ -34,7 +34,6 @@ namespace EjercicioFinal2
 
         private void ListaProductos()
         {
-
             List<Pedido> pedidos = new List<Pedido>();
 
             using (SqlCommand cmd = new SqlCommand("Usp_ListaPedidos", cn))
@@ -46,11 +45,6 @@ namespace EjercicioFinal2
                     using (DataTable dt = new DataTable())
                     {
                         da.Fill(dt);
-                        //DgPedidos.DataSource = df.Tables["ListaAnios"];
-                        //CboAnios.DisplayMember = "Anios";
-                        //CboAnios.ValueMember = "Anios";
-
-                        //DgPedidos.ItemsSource = df.Tables["ListaPedidos"];
 
                         Console.WriteLine("######## DATA ROWS ########");
                         DataRow[] rows = dt.Rows.Cast<DataRow>().ToArray();
@@ -58,14 +52,22 @@ namespace EjercicioFinal2
 
                         for (int i = 0; i < rows.Length; i++)
                         {
-                            pedidos.Add(new Pedido() { IdPedido = rows[i]["idPedido"].ToString() });
-                            pedidos.Add(new Pedido() { IdCliente = rows[i]["idCliente"].ToString() });
-                            pedidos.Add(new Pedido() { IdEmpleado = rows[i]["idEmpleado"].ToString() });
-                            pedidos.Add(new Pedido() { FechaPedido = rows[i]["fechaPedido"].ToString() });
-                            pedidos.Add(new Pedido() { FechaEntrega = rows[i]["fechaEntrega"].ToString() });
-                            pedidos.Add(new Pedido() { FechaEnvio = rows[i]["fechaEnvio"].ToString() });
-                            pedidos.Add(new Pedido() { FormaEnvio = rows[i]["formaEnvio"].ToString() });
-                            pedidos.Add(new Pedido() { Cargo = rows[i]["cargo"].ToString() });
+                            pedidos.Add(new Pedido() {
+                                IdPedido = rows[i]["idPedido"].ToString(), 
+                                IdCliente = rows[i]["idCliente"].ToString(),
+                                FechaPedido = rows[i]["fechaPedido"].ToString(),
+                                FechaEntrega = rows[i]["fechaEntrega"].ToString(),
+                                FechaEnvio = rows[i]["fechaEnvio"].ToString(),
+                                Cargo = rows[i]["cargo"].ToString(),
+                                Destinatario = rows[i]["destinatario"].ToString(),
+                                DireccionDestinatario = rows[i]["direccionDestinatario"].ToString(),
+                                CiudadDestinatario = rows[i]["ciudadDestinatario"].ToString(),
+                                RegionDestinatario = rows[i]["regionDestinatario"].ToString(),
+                                CodPostalDestinatario = rows[i]["codPostalDestinatario"].ToString(),
+                                PaisDestinatario = rows[i]["paisDestinatario"].ToString(),
+                                IdEmpleado = rows[i]["idEmpleado"].ToString(),
+                                FormaEnvio = rows[i]["formaEnvio"].ToString()
+                            });
 
                         }
 

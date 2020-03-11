@@ -23,8 +23,5 @@ namespace EjercicioFinal2
         public string CodPostalDestinatario { get; set; }
         public string PaisDestinatario { get; set; }
 
-        public Pedido()
-        {
-        }
     }
 }

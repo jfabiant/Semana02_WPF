@@ -76,6 +76,7 @@
       <DependentUpon>neptunoDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Pedido.cs" />
+    <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

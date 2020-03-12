@@ -35,7 +35,6 @@ namespace EjercicioFinal2
         private void ListaProductos()
         {
             List<Pedido> pedidos = new List<Pedido>();
-
             using (SqlCommand cmd = new SqlCommand("Usp_ListaPedidos", cn))
             {
                 using (SqlDataAdapter da = new SqlDataAdapter())
@@ -77,6 +76,56 @@ namespace EjercicioFinal2
                 }
             }
 
+        }
+
+        private void DgPedidos_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            List<Producto> productos = new List<Producto>();
+
+            Pedido pedido = (Pedido)DgPedidos.SelectedItem;
+            int idPedido = int.Parse(pedido.IdPedido);
+
+            using (SqlCommand cmd = new SqlCommand("Usp_Detalle_Pedido", cn))
+            {
+                using (SqlDataAdapter da = new SqlDataAdapter())
+                {
+                    da.SelectCommand = cmd;
+                    da.SelectCommand.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    da.SelectCommand.Parameters.AddWithValue("@idpedido", idPedido);
+
+                    using (DataTable dt = new DataTable())
+                    {
+                        da.Fill(dt);
+
+                        Console.WriteLine("######## DATA ROWS ########");
+                        DataRow[] rows = dt.Rows.Cast<DataRow>().ToArray();
+                        Console.WriteLine(rows);
+
+                        for (int i = 0; i < rows.Length; i++)
+                        {
+                            productos.Add(new Producto()
+                            {
+                                IdProducto = rows[i][0].ToString(),
+                                NombreProducto = rows[i][1].ToString(),
+                                IdProveedor= rows[i][2].ToString(),
+                                IdCategoria= rows[i][3].ToString(),
+                                CantidadPorUnidad= rows[i][4].ToString(),
+                                PrecioUnidad= rows[i][5].ToString(),
+                                UnidadesEnExistencia= rows[i][6].ToString(),
+                                UnidadesEnPedido= rows[i][7].ToString(),
+                                NivelNuevoPedido= rows[i][8].ToString(),
+                                Suspendido= rows[i][9].ToString(),
+                                CategoriaProducto= rows[i][10].ToString()
+                            });
+
+                        }
+
+                        DgDetallePedido.ItemsSource = productos;
+
+                    }
+                }
+            }
 
 
         }

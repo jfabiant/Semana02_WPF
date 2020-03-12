@@ -5,7 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EjercicioFinal2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <DataGrid Name="DgPedidos" AutoGenerateColumns="True">
-    </DataGrid>
+        Title="Caso N° 2" Height="450" Width="800">
+
+    <StackPanel Orientation="Vertical">
+        <Label FontWeight="Bold">Lista de pedidos</Label>
+        <DataGrid Name="DgPedidos" AutoGenerateColumns="True" Height="200" MouseDoubleClick="DgPedidos_MouseDoubleClick"
+                  IsReadOnly="True"></DataGrid>
+        <Label FontWeight="Bold">Detalle de pedido</Label>
+        <DataGrid Name="DgDetallePedido" AutoGenerateColumns="True" Height="200" IsReadOnly="True">
+        </DataGrid>
+        
+    </StackPanel>
+  
 </Window>
